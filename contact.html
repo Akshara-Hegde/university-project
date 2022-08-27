@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html" >ABC <span>XYZ</span></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <section class="location">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.88654003857!2d77.49085274762706!3d12.953959987171352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1658918861502!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <ion-icon name="navigate-outline"></ion-icon>
+                    <span>
+                        <h5>ABC Road, DEF Building, Banglore, Karnataka</h5>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon name="call-outline"></ion-icon>
+                    <span>
+                        <h5>+91 8892494243</h5>
+                    </span>
+                </div>
+                <div>
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span>
+                        <h5>abc@gmail.com</h5>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <h4>Contact</h4>
+        <p></p>
+        <div class="icons">
+            <a class="ion"
+                href="https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNjU4OTI1NDM2LCJjYWxsc2l0ZV9pZCI6MjY5NTQ4NDUzMDcyMDk1MX0%3D">
+                <ion-icon name="logo-facebook"></ion-icon>
+
+            </a>
+            <a class="ion" href="https://www.instagram.com/?hl=en">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+            </a>
+            <a class="ion" href="https://twitter.com/i/flow/login">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+            </a>
+            <a class="ion" href="https://www.linkedin.com/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+       
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showMenu(){
+            navlinks.style.right = "0";
+        }
+        function hideMenu(){
+            navlinks.style.right = "-200px"
+        }
+    </script>
+</body>
+
+</html>
